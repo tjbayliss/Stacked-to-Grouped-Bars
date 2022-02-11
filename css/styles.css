@@ -1,0 +1,60 @@
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  margin: auto;
+  position: relative;
+  width: 960px;
+}
+
+text {
+  font: 10px sans-serif;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+form {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+.dataRect {
+  opacity: 1;
+}
+
+.dataRect:hover {
+  cursor: pointer;
+  opacity: 0.75;
+  /*   opacity: 1.0;
+  fill: #0a344b;
+  stroke: #bd181c;
+  stroke-width: 0px; */
+}
+
+.selected {
+  opacity: 1.0;
+}
+
+.tick {
+  pointer-events: none;
+}
+
+.instuctionsList {
+  margin-bottom: 10px;
+}
+
+.tooltipList {
+  margin-bottom: 0px;
+}
+
+.y.axis path {
+  display: none;
+}
+
+.x.axis {
+  display: none;
+}
