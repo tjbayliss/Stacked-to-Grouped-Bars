@@ -1,0 +1,86 @@
+[
+  {
+    "year": 2015,
+    "totalArticles": 56393,
+    "category1": 44293,
+    "category1Name": "Medical and Health Sciences",
+    "category2": 5019,
+    "category2Name": "Natural Sciences",
+    "category3": 3431,
+    "category3Name": "Engineering and Technology",
+    "category4": 3650,
+    "category4Name": "Social Sciences"
+  },
+  {
+    "year": 2016,
+    "totalArticles": 65228,
+    "category1": 51527,
+    "category1Name": "Medical and Health Sciences",
+    "category2": 5624,
+    "category2Name": "Natural Sciences",
+    "category3": 3963,
+    "category3Name": "Engineering and Technology",
+    "category4": 4114,
+    "category4Name": "Social Sciences"
+  },
+  {
+    "year": 2017,
+    "totalArticles": 74121,
+    "category1": 58687,
+    "category1Name": "Medical and Health Sciences",
+    "category2": 6518,
+    "category2Name": "Natural Sciences",
+    "category3": 4566,
+    "category3Name": "Engineering and Technology",
+    "category4": 4350,
+    "category4Name": "Social Sciences"
+  },
+  {
+    "year": 2018,
+    "totalArticles": 86348,
+    "category1": 67634,
+    "category1Name": "Medical and Health Sciences",
+    "category2": 7541,
+    "category2Name": "Natural Sciences",
+    "category3": 5718,
+    "category3Name": "Engineering and Technology",
+    "category4": 5455,
+    "category4Name": "Social Sciences"
+  },
+  {
+    "year": 2019,
+    "totalArticles": 98140,
+    "category1": 76401,
+    "category1Name": "Medical and Health Sciences",
+    "category2": 8675,
+    "category2Name": "Natural Sciences",
+    "category3": 7057,
+    "category3Name": "Engineering and Technology",
+    "category4": 6007,
+    "category4Name": "Social Sciences"
+  },
+  {
+    "year": 2020,
+    "totalArticles": 124586,
+    "category1": 97695,
+    "category1Name": "Medical and Health Sciences",
+    "category2": 10861,
+    "category2Name": "Natural Sciences",
+    "category3": 8891,
+    "category3Name": "Engineering and Technology",
+    "category4": 7139,
+    "category4Name": "Social Sciences"
+  },
+  {
+    "year": 2021,
+    "totalArticles": 120862,
+    "category1": 94158,
+    "category1Name": "Medical and Health Sciences",
+    "category2": 10923,
+    "category2Name": "Natural Sciences",
+    "category3": 9101,
+    "category3Name": "Engineering and Technology",
+    "category4": 6680,
+    "category4Name": "Social Sciences"
+  }
+]

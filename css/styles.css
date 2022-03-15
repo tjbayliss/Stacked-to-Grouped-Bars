@@ -1,8 +1,11 @@
 body {
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  /* font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; */
+  font-family: 'Arial';
   margin: auto;
   position: relative;
-  width: 960px;
+  font-size: 14px;
+  margin: 0px;
+  /* width: 960px; */
 }
 
 text {
@@ -16,10 +19,8 @@ text {
   shape-rendering: crispEdges;
 }
 
-form {
-  position: absolute;
-  right: 10px;
-  top: 10px;
+.pearl-svg {
+  transform: translateX(50%);
 }
 
 .dataRect {
@@ -29,10 +30,6 @@ form {
 .dataRect:hover {
   cursor: pointer;
   opacity: 0.75;
-  /*   opacity: 1.0;
-  fill: #0a344b;
-  stroke: #bd181c;
-  stroke-width: 0px; */
 }
 
 .selected {
@@ -57,4 +54,100 @@ form {
 
 .x.axis {
   display: none;
+}
+
+
+form {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.instruction {
+  font-size: 2.0rem;
+  font-weight: bold;
+}
+
+.submitTopic {
+  margin: 25px;
+}
+
+.radio {
+  margin-top: 20px;
+}
+
+
+
+.blueHighlight {
+  color: #0070a8;
+  font-weight: bold;
+}
+
+.orangeHighlight {
+  color: #c75301;
+  font-weight: bold;
+}
+
+.instructions {
+  width: 50%;
+  margin: 50px auto;
+
+}
+
+.instruction {
+  font-size: 2.0rem;
+  font-weight: bold;
+}
+
+.instructionsList {
+  margin-bottom: 10px;
+}
+
+.mask {
+  width: 100%;
+  height: auto;
+  background-color: #FFF;
+  opacity: 0.95;
+  left: 0px;
+  top: 0px;
+  position: absolute;
+}
+
+.hide {
+  display: none;
+}
+
+.container {
+  margin-top: 0%;
+}
+
+
+.box {
+  width: 300px;
+  border: 1px solid #000;
+  margin: 50px;
+  cursor: pointer;
+}
+
+.toggle-container {
+  transition: height 0.35s ease-in-out;
+  overflow: hidden;
+}
+
+.toggle-container:not(.active) {
+  display: none;
+}
+
+.instructionLabel {
+  font-size: 10px;
+  font-weight: bold;
+  text-align: left;
+  margin: 0px;
+  border-style: solid;
+  padding: 2px;
+  border-color: #000;
+}
+
+.instructionLabel:hover {
+
+  cursor: pointer;
 }
