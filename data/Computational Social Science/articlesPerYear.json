@@ -2,101 +2,81 @@
   {
     "year": 2012,
     "totalArticles": 3830,
-    "category1": 1927,
-    "category1Name": "Social Sciences",
-    "category2": 1140,
-    "category2Name": "Quantitative Sciences",
-    "category3": 720,
-    "category3Name": "Others"
+    "categories": {
+      "Social Sciences": 1927,
+      "Quantitative Sciences": 1140,
+      "Others": 720,
+      "MoreOthers": 0
+    }
   },
   {
     "year": 2013,
-    "totalArticles": 4572,
-    "category1": 2183,
-    "category1Name": "Social Sciences",
-    "category2": 1518,
-    "category2Name": "Quantitative Sciences",
-    "category3": 824,
-    "category3Name": "Others"
+    "totalArticles": 3830,
+    "categories": {
+      "Social Sciences": 1927,
+      "Quantitative Sciences": 1140,
+      "Others": 720,
+      "MoreOthers": 0
+    }
   },
   {
     "year": 2014,
-    "totalArticles": 5034,
-    "category1": 2425,
-    "category1Name": "Social Sciences",
-    "category2": 1707,
-    "category2Name": "Quantitative Sciences",
-    "category3": 845,
-    "category3Name": "Others"
+    "totalArticles": 3830,
+    "categories": {
+      "Social Sciences": 1927,
+      "Quantitative Sciences": 1140,
+      "Others": 720,
+      "MoreOthers": 120
+    }
   },
   {
     "year": 2015,
-    "totalArticles": 5403,
-    "category1": 2548,
-    "category1Name": "Social Sciences",
-    "category2": 1797,
-    "category2Name": "Quantitative Sciences",
-    "category3": 999,
-    "category3Name": "Others"
+    "totalArticles": 3830,
+    "categories": {
+      "Social Sciences": 1927,
+      "Quantitative Sciences": 1140,
+      "Others": 720,
+      "MoreOthers": 120
+    }
   },
   {
     "year": 2016,
-    "totalArticles": 5830,
-    "category1": 2662,
-    "category1Name": "Social Sciences",
-    "category2": 2034,
-    "category2Name": "Quantitative Sciences",
-    "category3": 1068,
-    "category3Name": "Others"
+    "totalArticles": 3830,
+    "categories": {
+      "Social Sciences": 1927,
+      "Quantitative Sciences": 1140,
+      "Others": 720,
+      "MoreOthers": 120
+    }
   },
   {
     "year": 2017,
-    "totalArticles": 6288,
-    "category1": 2862,
-    "category1Name": "Social Sciences",
-    "category2": 2242,
-    "category2Name": "Quantitative Sciences",
-    "category3": 1086,
-    "category3Name": "Others"
+    "totalArticles": 3830,
+    "categories": {
+      "Social Sciences": 1927,
+      "Quantitative Sciences": 1140,
+      "Others": 720,
+      "MoreOthers": 120
+    }
   },
   {
     "year": 2018,
-    "totalArticles": 7246,
-    "category1": 3192,
-    "category1Name": "Social Sciences",
-    "category2": 2596,
-    "category2Name": "Quantitative Sciences",
-    "category3": 1301,
-    "category3Name": "Others"
+    "totalArticles": 0,
+    "categories": {
+      "Social Sciences": 0,
+      "Quantitative Sciences": 0,
+      "Others": 0,
+      "MoreOthers": 0
+    }
   },
   {
     "year": 2019,
-    "totalArticles": 7683,
-    "category1": 3355,
-    "category1Name": "Social Sciences",
-    "category2": 2808,
-    "category2Name": "Quantitative Sciences",
-    "category3": 1318,
-    "category3Name": "Others"
-  },
-  {
-    "year": 2020,
-    "totalArticles": 9211,
-    "category1": 4103,
-    "category1Name": "Social Sciences",
-    "category2": 3165,
-    "category2Name": "Quantitative Sciences",
-    "category3": 1704,
-    "category3Name": "Others"
-  },
-  {
-    "year": 2021,
-    "totalArticles": 9796,
-    "category1": 4438,
-    "category1Name": "Social Sciences",
-    "category2": 3221,
-    "category2Name": "Quantitative Sciences",
-    "category3": 1875,
-    "category3Name": "Others"
+    "totalArticles": 0,
+    "categories": {
+      "Social Sciences": 1927,
+      "Quantitative Sciences": 1140,
+      "Others": 720,
+      "MoreOthers": 120
+    }
   }
 ]

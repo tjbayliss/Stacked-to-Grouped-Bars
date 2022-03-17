@@ -14,99 +14,6 @@
   - fully comment code
 */
 
-// document.addEventListener(
-//   "DOMContentLoaded",
-//   function () {
-//     console.log("Ready!");
-//     buildSelectionPage();
-//   },
-//   false
-// );
-
-// function buildSelectionPage() {
-//   console.log("buildSelectionPage");
-//   console.log("d3.version", d3.version);
-
-//   var path = "/data/topic0_subtopic0_topics.json";
-//   console.log(path);
-//   var files = [path];
-//   var promises = [];
-
-//   files.forEach(function (url) {
-//     promises.push(d3.json(url));
-//   });
-
-//   Promise.all(promises)
-//     .then(function (values) {
-//       var topics = values[0];
-//       console.log(topics);
-
-//       // http://bl.ocks.org/jfreels/6734823
-//       var select = d3
-//         .selectAll(".topic-selection-form")
-//         .append("select")
-//         .attr("class", "select")
-//         .on("change", onchange);
-
-//       var options = select
-//         .selectAll("option")
-//         .data(topics)
-//         .enter()
-//         .append("option")
-//         .attr("class", function (d, i) {
-//           return "option" + " " + d.name.replaceAll(" ", "-");
-//         })
-//         .attr("id", function (d, i) {
-//           return "option-" + d.name.replaceAll(" ", "-");
-//         })
-//         .attr("value", function (d, i) {
-//           return d.name;
-//         })
-//         .text(function (d) {
-//           return d.name;
-//         });
-
-//       function onchange() {
-//         selectValue = d3.select("select").property("value");
-
-//         console.log("selectValue:", selectValue);
-
-//         d3.selectAll(".mask").classed("hide", true);
-//         d3.selectAll(".container").classed("hide", false);
-
-//         // var path = "/data/" + selectValue + "/data.json";
-//         var path = "/data/" + selectValue + "/articlesPerYear.json";
-
-//         console.log("selectValue Topic:", selectValue);
-//         console.log(path);
-
-//         var files = [path];
-//         var promises = [];
-
-//         files.forEach(function (url) {
-//           console.log(url);
-//           promises.push(d3.json(url));
-//         });
-
-//         Promise.all(promises)
-//           .then(function (values) {
-//             var chartData = values[0];
-//             console.log(chartData);
-//             drawChart(chartData);
-//           })
-//           .catch(function (error) {
-//             // Do some error handling.
-//             console.log("error!:", error);
-//           });
-//       }
-//     })
-//     .catch(function (error) {
-//       // Do some error handling.
-//       console.log("error!:", error);
-//     });
-//   return;
-// } // end function buildSelectionPage()
-
 console.log("script.js");
 
 var stack = d3.stack();
@@ -144,93 +51,41 @@ var Tooltip;
 //   .style("font-size", "9px");
 
 function drawChart(data) {
-  console.log(data);
-  pearlData.data = /* data[0]. */ data; // extract PEARL data array
+  pearlData.data = data; // extract PEARL data array
   pearlData.numberOfYears = pearlData.data.length; // determine number of x-axis categories
   pearlData.startYear = pearlData.data[0].year; // determine START year of x-axis/data time domain
   pearlData.endYear = pearlData.data[pearlData.data.length - 1].year; // determine END year of x-axis/data time domain
   pearlData.categories = []; // initialise array for the search categories
-  pearlData.numberOfCategories = 0; // initial var for number of categories
+  pearlData.numberOfCategories = -1; // initial var for number of categories
   pearlData.chartData = []; // initial array to contain data arrays for each data layer on chart
-  pearlData.keysToIgnore = ["year", "totalArticles"]; // array of data fields to ignore
   pearlData.arrayOfYears = []; // initialise array for years to display against on x axism(to be used for x axis labels)
 
-  console.log(pearlData.data);
-
-  // loop through raw data to construct new data obJect to pass into chart processing and creation
   pearlData.data.forEach(function (d, i) {
-    var yearObj = d;
+    var year = d.year;
+    var yearCategoryData = d.categories;
+    pearlData.arrayOfYears.push(year); // push year object element onto array
 
-    if (Object.keys(yearObj).length == 2) {
-      pearlData.arrayOfYears.push(yearObj.year); // push year object element onto array
-      var categoryIndex = 0;
-      // if (i == 0) {
-      //   pearlData.chartData.push([]);
-      // }
-      for (var element in yearObj) {
-        if (element == "totalArticles") {
-          if (pearlData.categories.indexOf(yearObj[element]) == -1) {
-            pearlData.categories.push(yearObj[element]);
-            pearlData.chartData.push([]);
-          }
-          // console.log(element, yearObj[element]);
-          categoryYearValue = yearObj[element];
-          pearlData.chartData[0].push(categoryYearValue);
-        }
+    var categoryCounter = 0;
+    for (var category in yearCategoryData) {
+      if (!pearlData.chartData[categoryCounter]) {
+        pearlData.chartData[categoryCounter] = [];
       }
-    } else {
-      pearlData.arrayOfYears.push(yearObj.year); // push year object element onto array
-      var iterator = 0; // iniital iteratior
-      var categoryYearValue = 0;
 
-      for (var element in yearObj) {
-        // is EVEN number
-        if (
-          iterator % 2 == 0 &&
-          pearlData.keysToIgnore.indexOf(element) == -1
-        ) {
-          categoryYearValue = yearObj[element];
-        }
-
-        // is ODD number
-        else if (
-          iterator % 2 != 0 &&
-          pearlData.keysToIgnore.indexOf(element) == -1
-        ) {
-          if (pearlData.categories.indexOf(yearObj[element]) == -1) {
-            pearlData.categories.push(yearObj[element]);
-            pearlData.chartData.push([]);
-          }
-          var categoryIndex = pearlData.categories.indexOf(yearObj[element]);
-
-          pearlData.chartData[categoryIndex].push(categoryYearValue);
-        }
-
-        // is ODD number
-        else {
-        }
-        iterator++;
-      } // end for loop ...
+      pearlData.chartData[categoryCounter].push(yearCategoryData[category]);
+      categoryCounter++;
     }
-  });
+  }); // end forEach
 
-  pearlData.numberOfCategories = pearlData.categories.length;
-
-  console.log(
-    pearlData.numberOfCategories,
-    pearlData.categories,
-    pearlData.categories.length
-  );
-  console.log(pearlData.chartData);
+  pearlData.numberOfCategories = Object.keys(
+    pearlData.data[0].categories
+  ).length;
+  pearlData.categories = Object.keys(pearlData.data[0].categories);
 
   pearlData.chartData = pearlData.chartData[0].map(function (col, i) {
     return pearlData.chartData.map(function (row) {
       return row[i];
     });
   });
-  console.log(pearlData.chartData);
-  console.log(pearlData.numberOfYears);
-  console.log(pearlData.arrayOfYears);
 
   (pearlData.layers = stack.keys(d3.range(pearlData.numberOfCategories))(
     pearlData.chartData
@@ -277,7 +132,10 @@ function drawChart(data) {
 
   pearlData.y = d3
     .scaleLinear()
-    .domain([0, pearlData.yStackMax])
+    .domain([
+      0,
+      /* pearlData.yStackMax */ Math.ceil(pearlData.yStackMax / 500) * 500,
+    ])
     .rangeRound([height, 0]);
 
   pearlData.yAxis = d3.axisLeft().scale(pearlData.y).tickSize(2).tickPadding(6);
@@ -347,8 +205,6 @@ function drawChart(data) {
     .style("stroke", "#a0a0a0")
     .style("opacity", 0.33);
 
-  console.log(pearlData.layers);
-
   pearlData.layer = pearlData.svg
     .selectAll(".layer")
     .data(pearlData.layers)
@@ -399,9 +255,6 @@ function drawChart(data) {
     })
     .style("opacity", 1);
 
-  console.log("\npearlData");
-  console.log(pearlData);
-
   d3.selectAll("input").on("change", changePearl);
 
   function changePearl() {
@@ -426,7 +279,11 @@ function drawChart(data) {
   }
 
   function transitionGroupedPearl() {
-    pearlData.y.domain([0, pearlData.yGroupMax]);
+    pearlData.y.domain([
+      0,
+      Math.ceil(pearlData.yGroupMax / pearlData.Rounding.yGroupMax) *
+        pearlData.Rounding.yGroupMax,
+    ]);
 
     pearlData.rect
       .transition()
@@ -450,7 +307,7 @@ function drawChart(data) {
         return pearlData.y(d[0]) - pearlData.y(d[1]);
       });
 
-    pearlData.yAxis.tickFormat(/* formatNumber */ d3.format("d"));
+    pearlData.yAxis.tickFormat(d3.format("d"));
     pearlData.svg
       .selectAll(".y.axis")
       .transition()
@@ -462,13 +319,17 @@ function drawChart(data) {
       .selectAll(".tick")
       .selectAll("text")
       .text(function (d, i) {
-        console.log(numberWithCommas(d));
         return numberWithCommas(d);
       });
   }
 
   function transitionStackedPearl() {
-    pearlData.y.domain([0, pearlData.yStackMax]);
+    // pearlData.y.domain([0, pearlData.yStackMax]);
+    pearlData.y.domain([
+      0,
+      Math.ceil(pearlData.yStackMax / pearlData.Rounding.yStackMax) *
+        pearlData.Rounding.yStackMax,
+    ]);
 
     pearlData.rect
       .transition()
@@ -659,40 +520,6 @@ var click = function (d, i) {
 
   d3.select(this).style("fill", "#0070a8");
 }; // end function click
-
-// https://www.javascripttutorial.net/javascript-dom/javascript-radio-button/
-// var btn = document.querySelector("#submitTopic");
-// var radioButtons = document.querySelectorAll('input[name="topic"]');
-// btn.addEventListener("click", () => {
-//   for (var radioButton of radioButtons) {
-//     if (radioButton.checked) {
-//       selected = radioButton.value;
-//       break;
-//     }
-//   } // end forEach
-
-//   d3.selectAll(".mask").classed("hide", true);
-//   d3.selectAll(".container").classed("hide", false);
-
-//   var path = "/data/" + selected + "/data.json";
-//   console.log("selected Topic:", selected);
-//   console.log(path);
-//   var files = [path];
-//   var promises = [];
-
-//   files.forEach(function (url) {
-//     promises.push(d3.json(url));
-//   });
-
-//   Promise.all(promises)
-//     .then(function (values) {
-//       drawChart(values[0]);
-//     })
-//     .catch(function (error) {
-//       // Do some error handling.
-//       console.log("error!:", error);
-//     });
-// });
 
 // https://codepen.io/jorgemaiden/pen/YgGZMg
 var linkToggle = document.querySelectorAll(".js-toggle");

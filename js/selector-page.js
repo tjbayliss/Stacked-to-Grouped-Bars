@@ -1,9 +1,27 @@
-console.log("selector-page.js");
+// console.log("selector-page.js");
 
 // project-specific var declarations ...
-var pearlData = {};
-pearlData.layerIsSelected = false;
-pearlData.topicsToDisable = ["Artificial Intelligence"];
+var pearlData = {
+  Rounding: {
+    yGroupMax: 200,
+    yStackMax: 500,
+    percent: 500,
+    categories: [], // initialise array for the search categories
+    numberOfCategories: [], // initial var for number of categories
+    chartData: [], // initial array to contain data arrays for each data layer on chart
+    arrayOfYears: [], // initialise array for years to display against on x axism(to be used for x axis labels)
+    layerIsSelected: false,
+    topicsToDisable: [
+      "Artificial Intelligence",
+      "Egyptian 2021 Gastroenterology",
+    ],
+  },
+};
+// pearlData.layerIsSelected = false;
+pearlData.topicsToDisable = [
+  "Artificial Intelligence",
+  "Egyptian 2021 Gastroenterology",
+];
 
 document.addEventListener(
   "DOMContentLoaded",
@@ -14,11 +32,11 @@ document.addEventListener(
 );
 
 function buildSelectionPage() {
-  console.log("buildSelectionPage");
-  console.log("d3.version", d3.version);
+  // console.log("buildSelectionPage");
+  // console.log("d3.version", d3.version);
 
   var path = "/data/topic0_subtopic0_topics.json";
-  console.log(path);
+  // console.log(path);
   var files = [path];
   var promises = [];
 
@@ -29,7 +47,7 @@ function buildSelectionPage() {
   Promise.all(promises)
     .then(function (values) {
       var topics = values[0];
-      console.log(topics);
+      // console.log(topics);
 
       // http://bl.ocks.org/jfreels/6734823
       var select = d3
@@ -74,7 +92,7 @@ function buildSelectionPage() {
       function onchange() {
         selectValue = d3.select("select").property("value");
 
-        console.log("selectValue:", selectValue);
+        // console.log("selectValue:", selectValue);
 
         d3.selectAll(".mask").classed("hide", true);
         d3.selectAll(".container").classed("hide", false);
@@ -82,14 +100,14 @@ function buildSelectionPage() {
         // var path = "/data/" + selectValue + "/data.json";
         var path = "/data/" + selectValue + "/articlesPerYear.json";
 
-        console.log("selectValue Topic:", selectValue);
-        console.log(path);
+        // console.log("selectValue Topic:", selectValue);
+        // console.log(path);
 
         var files = [path];
         var promises = [];
 
         files.forEach(function (url) {
-          console.log(url);
+          // console.log(url);
           promises.push(d3.json(url));
         });
 
