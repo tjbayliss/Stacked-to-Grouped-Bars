@@ -5,78 +5,88 @@
     "categories": {
       "Social Sciences": 1927,
       "Quantitative Sciences": 1140,
-      "Others": 720,
-      "MoreOthers": 0
+      "Others": 720
     }
   },
   {
     "year": 2013,
-    "totalArticles": 3830,
+    "totalArticles": 4572,
     "categories": {
-      "Social Sciences": 1927,
-      "Quantitative Sciences": 1140,
-      "Others": 720,
-      "MoreOthers": 0
+      "Social Sciences": 2183,
+      "Quantitative Sciences": 1518,
+      "Others": 824
     }
   },
   {
     "year": 2014,
-    "totalArticles": 3830,
+    "totalArticles": 5034,
     "categories": {
-      "Social Sciences": 1927,
-      "Quantitative Sciences": 1140,
-      "Others": 720,
-      "MoreOthers": 120
+      "Social Sciences": 2425,
+      "Quantitative Sciences": 1707,
+      "Others": 845
     }
   },
   {
     "year": 2015,
-    "totalArticles": 3830,
+    "totalArticles": 5403,
     "categories": {
-      "Social Sciences": 1927,
-      "Quantitative Sciences": 1140,
-      "Others": 720,
-      "MoreOthers": 120
+      "Social Sciences": 2548,
+      "Quantitative Sciences": 1797,
+      "Others": 999
     }
   },
   {
     "year": 2016,
-    "totalArticles": 3830,
+    "totalArticles": 5830,
     "categories": {
-      "Social Sciences": 1927,
-      "Quantitative Sciences": 1140,
-      "Others": 720,
-      "MoreOthers": 120
+      "Social Sciences": 2662,
+      "Quantitative Sciences": 2034,
+      "Others": 1068
     }
   },
   {
     "year": 2017,
-    "totalArticles": 3830,
+    "totalArticles": 6288,
     "categories": {
-      "Social Sciences": 1927,
-      "Quantitative Sciences": 1140,
-      "Others": 720,
-      "MoreOthers": 120
+      "Social Sciences": 2862,
+      "Quantitative Sciences": 2242,
+      "Others": 1086
     }
   },
   {
     "year": 2018,
-    "totalArticles": 0,
+    "totalArticles": 7246,
     "categories": {
-      "Social Sciences": 0,
-      "Quantitative Sciences": 0,
-      "Others": 0,
-      "MoreOthers": 0
+      "Social Sciences": 3192,
+      "Quantitative Sciences": 2596,
+      "Others": 1301
     }
   },
   {
     "year": 2019,
-    "totalArticles": 0,
+    "totalArticles": 7683,
     "categories": {
-      "Social Sciences": 1927,
-      "Quantitative Sciences": 1140,
-      "Others": 720,
-      "MoreOthers": 120
+      "Social Sciences": 3355,
+      "Quantitative Sciences": 2808,
+      "Others": 1318
+    }
+  },
+  {
+    "year": 2020,
+    "totalArticles": 9211,
+    "categories": {
+      "Social Sciences": 4103,
+      "Quantitative Sciences": 3165,
+      "Others": 1704
+    }
+  },
+  {
+    "year": 2021,
+    "totalArticles": 9796,
+    "categories": {
+      "Social Sciences": 4438,
+      "Quantitative Sciences": 3221,
+      "Others": 1875
     }
   }
 ]

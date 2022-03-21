@@ -1,14 +1,62 @@
 [
-  { "year": 2010, "totalArticles": 1051 },
-  { "year": 2011, "totalArticles": 1085 },
-  { "year": 2012, "totalArticles": 1246 },
-  { "year": 2013, "totalArticles": 1214 },
-  { "year": 2014, "totalArticles": 1107 },
-  { "year": 2015, "totalArticles": 1021 },
-  { "year": 2016, "totalArticles": 1081 },
-  { "year": 2017, "totalArticles": 1064 },
-  { "year": 2018, "totalArticles": 1093 },
-  { "year": 2019, "totalArticles": 1370 },
-  { "year": 2020, "totalArticles": 1653 },
-  { "year": 2021, "totalArticles": 2091 }
+  {
+    "year": 2010,
+    "totalArticles": 1051,
+    "categories": { "totalArticles": 1051 }
+  },
+  {
+    "year": 2011,
+    "totalArticles": 1085,
+    "categories": { "totalArticles": 1085 }
+  },
+  {
+    "year": 2012,
+    "totalArticles": 1246,
+    "categories": { "totalArticles": 1246 }
+  },
+  {
+    "year": 2013,
+    "totalArticles": 1214,
+    "categories": { "totalArticles": 1214 }
+  },
+  {
+    "year": 2014,
+    "totalArticles": 1107,
+    "categories": { "totalArticles": 1107 }
+  },
+  {
+    "year": 2015,
+    "totalArticles": 1021,
+    "categories": { "totalArticles": 1021 }
+  },
+  {
+    "year": 2016,
+    "totalArticles": 1081,
+    "categories": { "totalArticles": 1081 }
+  },
+  {
+    "year": 2017,
+    "totalArticles": 1064,
+    "categories": { "totalArticles": 1064 }
+  },
+  {
+    "year": 2018,
+    "totalArticles": 1093,
+    "categories": { "totalArticles": 1093 }
+  },
+  {
+    "year": 2019,
+    "totalArticles": 1370,
+    "categories": { "totalArticles": 1370 }
+  },
+  {
+    "year": 2020,
+    "totalArticles": 1653,
+    "categories": { "totalArticles": 1051 }
+  },
+  {
+    "year": 2021,
+    "totalArticles": 2091,
+    "categories": { "totalArticles": 1051 }
+  }
 ]

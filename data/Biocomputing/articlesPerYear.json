@@ -1,1 +1,79 @@
-[{"year": 1984, "totalArticles": 1}, {"year": 1986, "totalArticles": 1}, {"year": 1987, "totalArticles": 1}, {"year": 1989, "totalArticles": 2}, {"year": 1990, "totalArticles": 1}, {"year": 1991, "totalArticles": 1}, {"year": 1992, "totalArticles": 4}, {"year": 1993, "totalArticles": 1}, {"year": 1994, "totalArticles": 8}, {"year": 1995, "totalArticles": 7}, {"year": 1996, "totalArticles": 3}, {"year": 1997, "totalArticles": 18}, {"year": 1998, "totalArticles": 22}, {"year": 1999, "totalArticles": 34}, {"year": 2000, "totalArticles": 29}, {"year": 2001, "totalArticles": 37}, {"year": 2002, "totalArticles": 65}, {"year": 2003, "totalArticles": 59}, {"year": 2004, "totalArticles": 67}, {"year": 2005, "totalArticles": 105}, {"year": 2006, "totalArticles": 85}, {"year": 2007, "totalArticles": 86}, {"year": 2008, "totalArticles": 92}, {"year": 2009, "totalArticles": 130}, {"year": 2010, "totalArticles": 95}, {"year": 2011, "totalArticles": 90}, {"year": 2012, "totalArticles": 99}, {"year": 2013, "totalArticles": 94}, {"year": 2014, "totalArticles": 121}, {"year": 2015, "totalArticles": 115}, {"year": 2016, "totalArticles": 145}, {"year": 2017, "totalArticles": 125}, {"year": 2018, "totalArticles": 139}, {"year": 2019, "totalArticles": 128}, {"year": 2020, "totalArticles": 141}, {"year": 2021, "totalArticles": 171}, {"year": 2022, "totalArticles": 34}]
+[
+  { "year": 1984, "totalArticles": 1, "categories": { "totalArticles": 1 } },
+  { "year": 1986, "totalArticles": 1, "categories": { "totalArticles": 1 } },
+  { "year": 1987, "totalArticles": 1, "categories": { "totalArticles": 1 } },
+  { "year": 1989, "totalArticles": 2, "categories": { "totalArticles": 2 } },
+  { "year": 1990, "totalArticles": 1, "categories": { "totalArticles": 1 } },
+  { "year": 1991, "totalArticles": 1, "categories": { "totalArticles": 1 } },
+  { "year": 1992, "totalArticles": 4, "categories": { "totalArticles": 4 } },
+  { "year": 1993, "totalArticles": 1, "categories": { "totalArticles": 1 } },
+  { "year": 1994, "totalArticles": 8, "categories": { "totalArticles": 8 } },
+  { "year": 1995, "totalArticles": 7, "categories": { "totalArticles": 7 } },
+  { "year": 1996, "totalArticles": 3, "categories": { "totalArticles": 3 } },
+  { "year": 1997, "totalArticles": 18, "categories": { "totalArticles": 18 } },
+  { "year": 1998, "totalArticles": 22, "categories": { "totalArticles": 22 } },
+  { "year": 1999, "totalArticles": 34, "categories": { "totalArticles": 34 } },
+  { "year": 2000, "totalArticles": 29, "categories": { "totalArticles": 29 } },
+  { "year": 2001, "totalArticles": 37, "categories": { "totalArticles": 37 } },
+  { "year": 2002, "totalArticles": 65, "categories": { "totalArticles": 65 } },
+  { "year": 2003, "totalArticles": 59, "categories": { "totalArticles": 59 } },
+  { "year": 2004, "totalArticles": 67, "categories": { "totalArticles": 67 } },
+  {
+    "year": 2005,
+    "totalArticles": 105,
+    "categories": { "totalArticles": 105 }
+  },
+  { "year": 2006, "totalArticles": 85, "categories": { "totalArticles": 85 } },
+  { "year": 2007, "totalArticles": 86, "categories": { "totalArticles": 86 } },
+  { "year": 2008, "totalArticles": 92, "categories": { "totalArticles": 92 } },
+  {
+    "year": 2009,
+    "totalArticles": 130,
+    "categories": { "totalArticles": 130 }
+  },
+  { "year": 2010, "totalArticles": 95, "categories": { "totalArticles": 95 } },
+  { "year": 2011, "totalArticles": 90, "categories": { "totalArticles": 90 } },
+  { "year": 2012, "totalArticles": 99, "categories": { "totalArticles": 99 } },
+  { "year": 2013, "totalArticles": 94, "categories": { "totalArticles": 94 } },
+  {
+    "year": 2014,
+    "totalArticles": 121,
+    "categories": { "totalArticles": 121 }
+  },
+  {
+    "year": 2015,
+    "totalArticles": 115,
+    "categories": { "totalArticles": 115 }
+  },
+  {
+    "year": 2016,
+    "totalArticles": 145,
+    "categories": { "totalArticles": 145 }
+  },
+  {
+    "year": 2017,
+    "totalArticles": 125,
+    "categories": { "totalArticles": 125 }
+  },
+  {
+    "year": 2018,
+    "totalArticles": 139,
+    "categories": { "totalArticles": 139 }
+  },
+  {
+    "year": 2019,
+    "totalArticles": 128,
+    "categories": { "totalArticles": 128 }
+  },
+  {
+    "year": 2020,
+    "totalArticles": 141,
+    "categories": { "totalArticles": 141 }
+  },
+  {
+    "year": 2021,
+    "totalArticles": 171,
+    "categories": { "totalArticles": 171 }
+  },
+  { "year": 2022, "totalArticles": 34, "categories": { "totalArticles": 34 } }
+]

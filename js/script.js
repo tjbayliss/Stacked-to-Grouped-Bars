@@ -51,6 +51,7 @@ var Tooltip;
 //   .style("font-size", "9px");
 
 function drawChart(data) {
+  console.log("data:", data);
   pearlData.data = data; // extract PEARL data array
   pearlData.numberOfYears = pearlData.data.length; // determine number of x-axis categories
   pearlData.startYear = pearlData.data[0].year; // determine START year of x-axis/data time domain
@@ -86,6 +87,8 @@ function drawChart(data) {
       return row[i];
     });
   });
+
+  console.log("pearlData.chartData:", pearlData.chartData);
 
   (pearlData.layers = stack.keys(d3.range(pearlData.numberOfCategories))(
     pearlData.chartData
@@ -132,10 +135,7 @@ function drawChart(data) {
 
   pearlData.y = d3
     .scaleLinear()
-    .domain([
-      0,
-      /* pearlData.yStackMax */ Math.ceil(pearlData.yStackMax / 500) * 500,
-    ])
+    .domain([0, Math.ceil(pearlData.yStackMax / 500) * 500])
     .rangeRound([height, 0]);
 
   pearlData.yAxis = d3.axisLeft().scale(pearlData.y).tickSize(2).tickPadding(6);
@@ -202,7 +202,8 @@ function drawChart(data) {
     .attr("x1", 0)
     .attr("x2", width)
     .style("stroke-width", 0.5)
-    .style("stroke", "#a0a0a0")
+    .style("stroke", "#565656")
+    .style("stroke-dasharray", "2 2")
     .style("opacity", 0.33);
 
   pearlData.layer = pearlData.svg
@@ -253,7 +254,7 @@ function drawChart(data) {
     .attr("height", function (d) {
       return pearlData.y(d[0]) - pearlData.y(d[1]);
     })
-    .style("opacity", 1);
+    .style("opacity", 0.8);
 
   d3.selectAll("input").on("change", changePearl);
 
@@ -274,7 +275,8 @@ function drawChart(data) {
       .attr("x1", 0)
       .attr("x2", width)
       .style("stroke-width", 0.5)
-      .style("stroke", "#a0a0a0")
+      .style("stroke", "#565656")
+      .style("stroke-dasharray", "2 2")
       .style("opacity", 0.33);
   }
 
@@ -324,7 +326,6 @@ function drawChart(data) {
   }
 
   function transitionStackedPearl() {
-    // pearlData.y.domain([0, pearlData.yStackMax]);
     pearlData.y.domain([
       0,
       Math.ceil(pearlData.yStackMax / pearlData.Rounding.yStackMax) *
@@ -349,7 +350,7 @@ function drawChart(data) {
       })
       .attr("width", pearlData.x.bandwidth());
 
-    pearlData.yAxis.tickFormat(/* formatNumber */ d3.format("d"));
+    pearlData.yAxis.tickFormat(d3.format("d"));
 
     pearlData.svg
       .selectAll(".y.axis")

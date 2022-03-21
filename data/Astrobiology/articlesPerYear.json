@@ -1,1 +1,132 @@
-[{"year": 2010, "totalArticles": 534, "category1": 363, "category1Name": "Astronomical and physical sciences", "category2": 11, "category2Name": "Biological sciences", "category3": 42, "category3Name": "Chemical sciences", "category4": 9, "category4Name": "Social sciences"}, {"year": 2011, "totalArticles": 475, "category1": 297, "category1Name": "Astronomical and physical sciences", "category2": 11, "category2Name": "Biological sciences", "category3": 62, "category3Name": "Chemical sciences", "category4": 11, "category4Name": "Social sciences"}, {"year": 2012, "totalArticles": 511, "category1": 349, "category1Name": "Astronomical and physical sciences", "category2": 7, "category2Name": "Biological sciences", "category3": 59, "category3Name": "Chemical sciences", "category4": 11, "category4Name": "Social sciences"}, {"year": 2013, "totalArticles": 505, "category1": 336, "category1Name": "Astronomical and physical sciences", "category2": 12, "category2Name": "Biological sciences", "category3": 51, "category3Name": "Chemical sciences", "category4": 10, "category4Name": "Social sciences"}, {"year": 2014, "totalArticles": 569, "category1": 357, "category1Name": "Astronomical and physical sciences", "category2": 20, "category2Name": "Biological sciences", "category3": 87, "category3Name": "Chemical sciences", "category4": 7, "category4Name": "Social sciences"}, {"year": 2015, "totalArticles": 480, "category1": 302, "category1Name": "Astronomical and physical sciences", "category2": 17, "category2Name": "Biological sciences", "category3": 53, "category3Name": "Chemical sciences", "category4": 6, "category4Name": "Social sciences"}, {"year": 2016, "totalArticles": 498, "category1": 286, "category1Name": "Astronomical and physical sciences", "category2": 19, "category2Name": "Biological sciences", "category3": 80, "category3Name": "Chemical sciences", "category4": 10, "category4Name": "Social sciences"}, {"year": 2017, "totalArticles": 557, "category1": 301, "category1Name": "Astronomical and physical sciences", "category2": 22, "category2Name": "Biological sciences", "category3": 91, "category3Name": "Chemical sciences", "category4": 16, "category4Name": "Social sciences"}, {"year": 2018, "totalArticles": 569, "category1": 326, "category1Name": "Astronomical and physical sciences", "category2": 23, "category2Name": "Biological sciences", "category3": 86, "category3Name": "Chemical sciences", "category4": 12, "category4Name": "Social sciences"}, {"year": 2019, "totalArticles": 643, "category1": 385, "category1Name": "Astronomical and physical sciences", "category2": 19, "category2Name": "Biological sciences", "category3": 81, "category3Name": "Chemical sciences", "category4": 9, "category4Name": "Social sciences"}, {"year": 2020, "totalArticles": 670, "category1": 415, "category1Name": "Astronomical and physical sciences", "category2": 13, "category2Name": "Biological sciences", "category3": 101, "category3Name": "Chemical sciences", "category4": 11, "category4Name": "Social sciences"}, {"year": 2021, "totalArticles": 802, "category1": 458, "category1Name": "Astronomical and physical sciences", "category2": 23, "category2Name": "Biological sciences", "category3": 131, "category3Name": "Chemical sciences", "category4": 29, "category4Name": "Social sciences"}, {"year": 2022, "totalArticles": 89, "category1": 50, "category1Name": "Astronomical and physical sciences", "category2": 1, "category2Name": "Biological sciences", "category3": 20, "category3Name": "Chemical sciences", "category4": 3, "category4Name": "Social sciences"}]
+[
+  {
+    "year": 2010,
+    "totalArticles": 534,
+    "categories": {
+      "Astronomical and physical sciences": 363,
+      "Biological sciences": 11,
+      "Chemical sciences": 42,
+      "Social sciences": 9
+    }
+  },
+  {
+    "year": 2011,
+    "totalArticles": 475,
+    "categories": {
+      "Astronomical and physical sciences": 297,
+      "Biological sciences": 11,
+      "Chemical sciences": 62,
+      "Social sciences": 11
+    }
+  },
+  {
+    "year": 2012,
+    "totalArticles": 511,
+    "categories": {
+      "Astronomical and physical sciences": 349,
+      "Biological sciences": 7,
+      "Chemical sciences": 59,
+      "Social sciences": 11
+    }
+  },
+  {
+    "year": 2013,
+    "totalArticles": 505,
+    "categories": {
+      "Astronomical and physical sciences": 336,
+      "Biological sciences": 12,
+      "Chemical sciences": 51,
+      "Social sciences": 10
+    }
+  },
+  {
+    "year": 2014,
+    "totalArticles": 569,
+    "categories": {
+      "Astronomical and physical sciences": 357,
+      "Biological sciences": 20,
+      "Chemical sciences": 87,
+      "Social sciences": 7
+    }
+  },
+  {
+    "year": 2015,
+    "totalArticles": 480,
+    "categories": {
+      "Astronomical and physical sciences": 302,
+      "Biological sciences": 17,
+      "Chemical sciences": 53,
+      "Social sciences": 6
+    }
+  },
+  {
+    "year": 2016,
+    "totalArticles": 498,
+    "categories": {
+      "Astronomical and physical sciences": 286,
+      "Biological sciences": 19,
+      "Chemical sciences": 80,
+      "Social sciences": 10
+    }
+  },
+  {
+    "year": 2017,
+    "totalArticles": 557,
+    "categories": {
+      "Astronomical and physical sciences": 301,
+      "Biological sciences": 22,
+      "Chemical sciences": 91,
+      "Social sciences": 16
+    }
+  },
+  {
+    "year": 2018,
+    "totalArticles": 569,
+    "categories": {
+      "Astronomical and physical sciences": 326,
+      "Biological sciences": 23,
+      "Chemical sciences": 86,
+      "Social sciences": 12
+    }
+  },
+  {
+    "year": 2019,
+    "totalArticles": 643,
+    "categories": {
+      "Astronomical and physical sciences": 385,
+      "Biological sciences": 19,
+      "Chemical sciences": 81,
+      "Social sciences": 9
+    }
+  },
+  {
+    "year": 2020,
+    "totalArticles": 670,
+    "categories": {
+      "Astronomical and physical sciences": 415,
+      "Biological sciences": 13,
+      "Chemical sciences": 101,
+      "Social sciences": 11
+    }
+  },
+  {
+    "year": 2021,
+    "totalArticles": 802,
+    "categories": {
+      "Astronomical and physical sciences": 458,
+      "Biological sciences": 23,
+      "Chemical sciences": 131,
+      "Social sciences": 29
+    }
+  },
+  {
+    "year": 2022,
+    "totalArticles": 89,
+    "categories": {
+      "Astronomical and physical sciences": 50,
+      "Biological sciences": 1,
+      "Chemical sciences": 20,
+      "Social sciences": 3
+    }
+  }
+]

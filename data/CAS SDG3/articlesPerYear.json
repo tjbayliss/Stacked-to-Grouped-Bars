@@ -1,1 +1,72 @@
-[{"year": 2015, "totalArticles": 56393, "category1": 44293, "category1Name": "Medical and Health Sciences", "category2": 5019, "category2Name": "Natural Sciences", "category3": 3431, "category3Name": "Engineering and Technology", "category4": 3650, "category4Name": "Social Sciences"}, {"year": 2016, "totalArticles": 65228, "category1": 51527, "category1Name": "Medical and Health Sciences", "category2": 5624, "category2Name": "Natural Sciences", "category3": 3963, "category3Name": "Engineering and Technology", "category4": 4114, "category4Name": "Social Sciences"}, {"year": 2017, "totalArticles": 74121, "category1": 58687, "category1Name": "Medical and Health Sciences", "category2": 6518, "category2Name": "Natural Sciences", "category3": 4566, "category3Name": "Engineering and Technology", "category4": 4350, "category4Name": "Social Sciences"}, {"year": 2018, "totalArticles": 86348, "category1": 67634, "category1Name": "Medical and Health Sciences", "category2": 7541, "category2Name": "Natural Sciences", "category3": 5718, "category3Name": "Engineering and Technology", "category4": 5455, "category4Name": "Social Sciences"}, {"year": 2019, "totalArticles": 98140, "category1": 76401, "category1Name": "Medical and Health Sciences", "category2": 8675, "category2Name": "Natural Sciences", "category3": 7057, "category3Name": "Engineering and Technology", "category4": 6007, "category4Name": "Social Sciences"}, {"year": 2020, "totalArticles": 124586, "category1": 97695, "category1Name": "Medical and Health Sciences", "category2": 10861, "category2Name": "Natural Sciences", "category3": 8891, "category3Name": "Engineering and Technology", "category4": 7139, "category4Name": "Social Sciences"}, {"year": 2021, "totalArticles": 120862, "category1": 94158, "category1Name": "Medical and Health Sciences", "category2": 10923, "category2Name": "Natural Sciences", "category3": 9101, "category3Name": "Engineering and Technology", "category4": 6680, "category4Name": "Social Sciences"}]
+[
+  {
+    "year": 2015,
+    "totalArticles": 56393,
+    "categories": {
+      "Medical and Health Sciences": 44293,
+      "Natural Sciences": 5019,
+      "Engineering and Technology": 3431,
+      "Social Sciences": 3650
+    }
+  },
+  {
+    "year": 2016,
+    "totalArticles": 65228,
+    "categories": {
+      "Medical and Health Sciences": 51527,
+      "Natural Sciences": 5624,
+      "Engineering and Technology": 3963,
+      "Social Sciences": 3963
+    }
+  },
+  {
+    "year": 2017,
+    "totalArticles": 74121,
+    "categories": {
+      "Medical and Health Sciences": 58687,
+      "Natural Sciences": 6518,
+      "Engineering and Technology": 4566,
+      "Social Sciences": 4350
+    }
+  },
+  {
+    "year": 2018,
+    "totalArticles": 86348,
+    "categories": {
+      "Medical and Health Sciences": 67634,
+      "Natural Sciences": 7541,
+      "Engineering and Technology": 5718,
+      "Social Sciences": 5455
+    }
+  },
+  {
+    "year": 2019,
+    "totalArticles": 98140,
+    "categories": {
+      "Medical and Health Sciences": 76401,
+      "Natural Sciences": 8675,
+      "Engineering and Technology": 7057,
+      "Social Sciences": 6007
+    }
+  },
+  {
+    "year": 2020,
+    "totalArticles": 124586,
+    "categories": {
+      "Medical and Health Sciences": 97695,
+      "Natural Sciences": 10861,
+      "Engineering and Technology": 8891,
+      "Social Sciences": 8891
+    }
+  },
+  {
+    "year": 2021,
+    "totalArticles": 120862,
+    "categories": {
+      "Medical and Health Sciences": 94158,
+      "Natural Sciences": 10923,
+      "Engineering and Technology": 9101,
+      "Social Sciences": 6680
+    }
+  }
+]

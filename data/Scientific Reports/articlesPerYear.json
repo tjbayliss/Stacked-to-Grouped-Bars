@@ -1,1 +1,22 @@
-[{"year": 2018, "totalArticles": 18167}, {"year": 2019, "totalArticles": 20424}, {"year": 2020, "totalArticles": 22464}, {"year": 2021, "totalArticles": 24534}]
+[
+  {
+    "year": 2018,
+    "totalArticles": 18167,
+    "categories": { "totalArticles": 18167 }
+  },
+  {
+    "year": 2019,
+    "totalArticles": 20424,
+    "categories": { "totalArticles": 20424 }
+  },
+  {
+    "year": 2020,
+    "totalArticles": 22464,
+    "categories": { "totalArticles": 22464 }
+  },
+  {
+    "year": 2021,
+    "totalArticles": 24534,
+    "categories": { "totalArticles": 24534 }
+  }
+]

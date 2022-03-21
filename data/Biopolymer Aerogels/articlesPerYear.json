@@ -1,158 +1,132 @@
 [
   {
     "year": 2010,
-    "totalArticles": 15,
-    "category1": 4,
-    "category1Name": "Engineering and Aplications",
-    "category2": 8,
-    "category2Name": "Chemical Sciences",
-    "category3": 0,
-    "category3Name": 0,
-    "category4": 0,
-    "category4Name": 0
+    "categories": {
+      "Engineering and Aplications": 4,
+      "Chemical Sciences": 8,
+      "Health Sciences": 0,
+      "Physical Sciences": 0
+    },
+    "totalArticles": 15
   },
   {
     "year": 2011,
-    "totalArticles": 15,
-    "category1": 2,
-    "category1Name": "Engineering and Aplications",
-    "category2": 9,
-    "category2Name": "Chemical Sciences",
-    "category3": 0,
-    "category3Name": 0,
-    "category4": 0,
-    "category4Name": 0
+    "categories": {
+      "Engineering and Aplications": 2,
+      "Chemical Sciences": 9,
+      "Health Sciences": 0,
+      "Physical Sciences": 0
+    },
+    "totalArticles": 15
   },
   {
     "year": 2012,
-    "totalArticles": 21,
-    "category1": 7,
-    "category1Name": "Engineering and Aplications",
-    "category2": 10,
-    "category2Name": "Chemical Sciences",
-    "category3": 1,
-    "category3Name": "Health Sciences",
-    "category4": 0,
-    "category4Name": 0
+    "categories": {
+      "Engineering and Aplications": 7,
+      "Chemical Sciences": 10,
+      "Health Sciences": 1,
+      "Physical Sciences": 0
+    },
+    "totalArticles": 21
   },
   {
     "year": 2013,
-    "totalArticles": 39,
-    "category1": 13,
-    "category1Name": "Engineering and Aplications",
-    "category2": 15,
-    "category2Name": "Chemical Sciences",
-    "category3": 1,
-    "category3Name": "Health Sciences",
-    "category4": 0,
-    "category4Name": 0
+    "categories": {
+      "Engineering and Aplications": 13,
+      "Chemical Sciences": 15,
+      "Health Sciences": 15,
+      "Physical Sciences": 0
+    },
+    "totalArticles": 39
   },
   {
     "year": 2014,
-    "totalArticles": 58,
-    "category1": 22,
-    "category1Name": "Engineering and Aplications",
-    "category2": 25,
-    "category2Name": "Chemical Sciences",
-    "category3": 0,
-    "category3Name": 0,
-    "category4": 0,
-    "category4Name": 0
+    "categories": {
+      "Engineering and Aplications": 22,
+      "Chemical Sciences": 25,
+      "Health Sciences": 0,
+      "Physical Sciences": 0
+    },
+    "totalArticles": 58
   },
   {
     "year": 2015,
-    "totalArticles": 85,
-    "category1": 25,
-    "category1Name": "Engineering and Aplications",
-    "category2": 32,
-    "category2Name": "Chemical Sciences",
-    "category3": 1,
-    "category3Name": "Health Sciences",
-    "category4": 0,
-    "category4Name": 0
+    "categories": {
+      "Engineering and Aplications": 25,
+      "Chemical Sciences": 32,
+      "Health Sciences": 1,
+      "Physical Sciences": 0
+    },
+    "totalArticles": 85
   },
   {
     "year": 2016,
-    "totalArticles": 99,
-    "category1": 36,
-    "category1Name": "Engineering and Aplications",
-    "category2": 38,
-    "category2Name": "Chemical Sciences",
-    "category3": 1,
-    "category3Name": "Health Sciences",
-    "category4": 1,
-    "category4Name": "Physical Sciences"
+    "categories": {
+      "Engineering and Aplications": 36,
+      "Chemical Sciences": 38,
+      "Health Sciences": 1,
+      "Physical Sciences": 1
+    },
+    "totalArticles": 99
   },
   {
     "year": 2017,
-    "totalArticles": 130,
-    "category1": 56,
-    "category1Name": "Engineering and Aplications",
-    "category2": 48,
-    "category2Name": "Chemical Sciences",
-    "category3": 0,
-    "category3Name": 0,
-    "category4": 0,
-    "category4Name": 0
+    "categories": {
+      "Engineering and Aplications": 56,
+      "Chemical Sciences": 48,
+      "Health Sciences": 0,
+      "Physical Sciences": 0
+    },
+    "totalArticles": 130
   },
   {
     "year": 2018,
-    "totalArticles": 164,
-    "category1": 55,
-    "category1Name": "Engineering and Aplications",
-    "category2": 68,
-    "category2Name": "Chemical Sciences",
-    "category3": 1,
-    "category3Name": "Health Sciences",
-    "category4": 1,
-    "category4Name": "Physical Sciences"
+    "categories": {
+      "Engineering and Aplications": 55,
+      "Chemical Sciences": 68,
+      "Health Sciences": 1,
+      "Physical Sciences": 1
+    },
+    "totalArticles": 164
   },
   {
     "year": 2019,
-    "totalArticles": 213,
-    "category1": 87,
-    "category1Name": "Engineering and Aplications",
-    "category2": 59,
-    "category2Name": "Chemical Sciences",
-    "category3": 0,
-    "category3Name": 0,
-    "category4": 0,
-    "category4Name": 0
+    "categories": {
+      "Engineering and Aplications": 87,
+      "Chemical Sciences": 59,
+      "Health Sciences": 0,
+      "Physical Sciences": 0
+    },
+    "totalArticles": 213
   },
   {
     "year": 2020,
-    "totalArticles": 253,
-    "category1": 104,
-    "category1Name": "Engineering and Aplications",
-    "category2": 81,
-    "category2Name": "Chemical Sciences",
-    "category3": 0,
-    "category3Name": 0,
-    "category4": 1,
-    "category4Name": "Physical Sciences"
+    "categories": {
+      "Engineering and Aplications": 104,
+      "Chemical Sciences": 81,
+      "Health Sciences": 0,
+      "Physical Sciences": 1
+    },
+    "totalArticles": 253
   },
   {
     "year": 2021,
-    "totalArticles": 305,
-    "category1": 120,
-    "category1Name": "Engineering and Aplications",
-    "category2": 99,
-    "category2Name": "Chemical Sciences",
-    "category3": 4,
-    "category3Name": "Health Sciences",
-    "category4": 1,
-    "category4Name": "Physical Sciences"
+    "categories": {
+      "Engineering and Aplications": 120,
+      "Chemical Sciences": 99,
+      "Health Sciences": 4,
+      "Physical Sciences": 1
+    },
+    "totalArticles": 305
   },
   {
     "year": 2022,
-    "totalArticles": 78,
-    "category1": 38,
-    "category1Name": "Engineering and Aplications",
-    "category2": 20,
-    "category2Name": "Chemical Sciences",
-    "category3": 2,
-    "category3Name": "Health Sciences",
-    "category4": 0,
-    "category4Name": 0
+    "categories": {
+      "Engineering and Aplications": 38,
+      "Chemical Sciences": 20,
+      "Health Sciences": 2,
+      "Physical Sciences": 0
+    },
+    "totalArticles": 78
   }
 ]

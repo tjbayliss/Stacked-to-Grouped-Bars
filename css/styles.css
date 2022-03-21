@@ -24,7 +24,7 @@ text {
 }
 
 .dataRect {
-  opacity: 1;
+  opacity: 0.9;
 }
 
 .dataRect:hover {
@@ -38,6 +38,11 @@ text {
 
 .tick {
   pointer-events: none;
+}
+
+.tick text {
+  fill: #565656;
+  font-size: 9px;
 }
 
 .instuctionsList {
